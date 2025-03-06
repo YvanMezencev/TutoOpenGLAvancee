@@ -41,6 +41,12 @@ int main()
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
 	glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+	float vertices[] = {
+		-0.5f, -0.5f, 0.0f,
+		0.5f, -0.5f, 0.0f,
+		0.0f, 0.5f, 0.0f
+	};
+
 	while (!glfwWindowShouldClose(window))
 	{
 		//Input
